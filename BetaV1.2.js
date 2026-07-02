@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   if (userAgent.includes('Roblox')) {
     
     // Link RAW GitHub kamu
-    const githubRawUrl = "https://raw.githubusercontent.com/narakublox/PluginStudioLite/refs/heads/main/LOG-PLUGIN";
+    const githubRawUrl = "https://raw.githubusercontent.com/narakuhub/plugin/refs/heads/main/LOG-PLUGIN";
 
     try {
       // Vercel mengambil isi script dari GitHub di balik layar
