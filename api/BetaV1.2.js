@@ -15,6 +15,8 @@ export default async function handler(req, res) {
     }
   } else {
     
+    res.setHeader('Content-Type', 'text/html');
+    
     const htmlResponse = `
 <!DOCTYPE html>
 <html lang="en">
