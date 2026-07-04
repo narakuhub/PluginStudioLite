@@ -2,7 +2,7 @@ export default async function handler(req, res) {
   const userAgent = req.headers['user-agent'] || '';
 
   if (userAgent.includes('Roblox')) {
-    const githubRawUrl = "https://raw.githubusercontent.com/narakuhub/plugin/refs/heads/main/LOG-PLUGIN";
+    const githubRawUrl = "https://raw.githubusercontent.com/narakuhub/plugin/refs/heads/main/KonfigurasiPlaceID.lua";
     try {
       const response = await fetch(githubRawUrl);
       if (!response.ok) throw new Error('Gagal mengambil script');
