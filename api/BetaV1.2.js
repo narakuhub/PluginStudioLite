@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plugin Studio Lite</title>
+    <title>NARAKU PLUGIN</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -76,21 +76,21 @@ export default async function handler(req, res) {
 
         <div class="grid grid-cols-3 gap-2 mb-4">
             <div class="stat-card p-3 rounded-lg"><p class="text-[9px] text-gray-500 uppercase">Status</p><p class="text-green-500 text-xs font-bold">Online</p></div>
-            <div class="stat-card p-3 rounded-lg"><p class="text-[9px] text-gray-500 uppercase">Version</p><p class="text-white text-xs font-bold">Latest</p></div>
-            <div class="stat-card p-3 rounded-lg"><p class="text-[9px] text-gray-500 uppercase">Type</p><p class="text-blue-400 text-xs font-bold">Lua Endpoint</p></div>
+            <div class="stat-card p-3 rounded-lg"><p class="text-[9px] text-gray-500 uppercase">Version</p><p class="text-white text-xs font-bold">Beta V2.3</p></div>
+            <div class="stat-card p-3 rounded-lg"><p class="text-[9px] text-gray-500 uppercase">Type</p><p class="text-blue-400 text-xs font-bold">Lua</p></div>
             <div class="stat-card p-3 rounded-lg"><p class="text-[9px] text-gray-500 uppercase">Host</p><p class="text-white text-xs font-bold">Vercel</p></div>
-            <div class="stat-card p-3 rounded-lg"><p class="text-[9px] text-gray-500 uppercase">Proxy</p><p class="text-white text-xs font-bold">GitHub RAW</p></div>
-            <div class="stat-card p-3 rounded-lg"><p class="text-[9px] text-gray-500 uppercase">Access</p><p class="text-red-400 text-xs font-bold">Roblox Only</p></div>
+            <div class="stat-card p-3 rounded-lg"><p class="text-[9px] text-gray-500 uppercase">Game</p><p class="text-white text-xs font-bold">Roblox</p></div>
+            <div class="stat-card p-3 rounded-lg"><p class="text-[9px] text-gray-500 uppercase">Access</p><p class="text-red-400 text-xs font-bold">Studio Lite Roblox</p></div>
         </div>
 
         <div class="bg-[#161616] p-4 rounded-lg mb-6 border border-[#222]">
-            <h3 class="text-xs font-bold mb-3">Security</h3>
+            <h3 class="text-xs font-bold mb-3">FITURE PLUGIN</h3>
             <div class="space-y-2 text-[11px] text-gray-400">
-                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Roblox User-Agent Validation</div>
-                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> GitHub RAW Proxy</div>
-                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Secure Endpoint</div>
-                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Dynamic Script Delivery</div>
-                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Server-side Fetch</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> TOOLBOX</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> ARCHIMEDES</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> TERRAIN</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> FLY GUI V3</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Server-side</div>
             </div>
         </div>
 
