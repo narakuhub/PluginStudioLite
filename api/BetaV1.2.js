@@ -45,7 +45,7 @@ export default async function handler(req, res) {
         <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2">
                 <span class="text-blue-500 font-bold">_></span>
-                <h2 class="font-bold">Loadstring Script</h2>
+                <h2 class="font-bold">PLUGIN STUDIO LITE</h2>
             </div>
             <span class="bg-green-900/20 text-green-500 text-[10px] px-2 py-1 rounded border border-green-800/50 flex items-center gap-1 uppercase font-bold">
                 <i class="fa-solid fa-circle-check text-[8px]"></i> Verified
@@ -57,8 +57,8 @@ export default async function handler(req, res) {
                 <button onclick="copyScript(this)" class="hover:text-white transition"><i class="fa-regular fa-copy"></i> Copy</button>
             </div>
             <code id="scriptText" class="text-xs text-blue-300">
-                -- SALIN SCRIPT LOADSTRING <br>
-                -- EXECUTE DISTUDIO LITE <br>
+                -- COPY SCRIPT LOADSTRING <br>
+                -- EXECUTE SCRIPT DISTUDIO LITE <br>
                 loadstring(game:HttpGet("https://plugin-studio-lite-nx.vercel.app/api/BetaV1.2"))()
             </code>
         </div>
@@ -77,7 +77,7 @@ export default async function handler(req, res) {
                 <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> ARCHIMEDES</div>
                 <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> TERRAIN</div>
                 <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> FLY GUI V3</div>
-                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> MAANFAATKAN FITUR YANG ADA</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> REPORT BUGS ON DISCORD >
             </div>
         </div>
         <div class="flex gap-2">
