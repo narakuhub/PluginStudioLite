@@ -142,6 +142,7 @@ export default async function handler(req, res) {
 </html>
 `;
 
+    res.setHeader('Content-Type', 'text/html');
     return res.status(403).send(htmlResponse);
   }
 }
