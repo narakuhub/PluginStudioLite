@@ -109,40 +109,42 @@ export default async function handler(req, res) {
 
     <script>
         function copyScript(btn) {
-            const text = "loadstring(game:HttpGet(\"https://plugin-studio-lite-nx.vercel.app/api/BetaV1.2\"))()";
-            navigator.clipboard.writeText(text);
+            const text = 'loadstring(game:HttpGet("https://plugin-studio-lite-nx.vercel.app/api/BetaV1.2"))()';
+            navigator.clipboard.writeText(text).then(() => {
+                const originalIcon = btn.innerHTML;
+                btn.innerHTML = '<i class="fa-solid fa-check"></i>';
+                setTimeout(() => { btn.innerHTML = originalIcon; }, 2000);
+            });
+        }
+
+        window.onload = () => {
+            const canvas = document.getElementById('matrix');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
             
-            const originalIcon = btn.innerHTML;
-            btn.innerHTML = '<i class="fa-solid fa-check"></i>';
-            setTimeout(() => { btn.innerHTML = originalIcon; }, 2000);
-        }
+            const letters = "01LuaScriptNaraku10101";
+            const fontSize = 14;
+            const columns = canvas.width / fontSize;
+            const drops = Array(Math.floor(columns)).fill(1);
 
-        const canvas = document.getElementById('matrix');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        const letters = "01LuaScriptNaraku10101";
-        const fontSize = 14;
-        const columns = canvas.width / fontSize;
-        const drops = Array(Math.floor(columns)).fill(1);
-
-        function draw() {
-            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "#0F0";
-            ctx.font = fontSize + "px monospace";
-            for(let i = 0; i < drops.length; i++) {
-                const text = letters[Math.floor(Math.random() * letters.length)];
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-                if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
-                drops[i]++;
+            function draw() {
+                ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "#0F0";
+                ctx.font = fontSize + "px monospace";
+                for(let i = 0; i < drops.length; i++) {
+                    const text = letters[Math.floor(Math.random() * letters.length)];
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                    drops[i]++;
+                }
             }
-        }
-        setInterval(draw, 33);
+            setInterval(draw, 33);
+        };
     </script>
 </body>
 </html>
-`;
 
     res.setHeader('Content-Type', 'text/html');
     return res.status(200).send(htmlResponse);
