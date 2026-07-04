@@ -77,15 +77,14 @@ export default async function handler(req, res) {
                 <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> ARCHIMEDES</div>
                 <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> TERRAIN</div>
                 <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> FLY GUI V3</div>
-                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> REPORT BUGS ON DISCORD >
             </div>
         </div>
         <div class="flex gap-2">
             <button onclick="copyScript(this)" class="flex-1 btn-gradient text-white py-2 rounded font-bold text-sm transition flex items-center justify-center gap-2">
-                <i class="fa-regular fa-copy"></i> Copy Loadstring
+                <i class="fa-regular fa-copy"></i> COPY SCRIPT
             </button>
             <a href="https://discord.gg/U4qe4r9hs" target="_blank" class="px-4 py-2 bg-[#222] hover:bg-[#333] rounded text-sm transition flex items-center gap-2">
-                <i class="fa-brands fa-discord"></i> Join
+                <i class="fa-brands fa-discord"></i> JOIN
             </a>
             <a href="#" class="px-4 py-2 bg-[#222] hover:bg-[#333] rounded text-sm transition"><i class="fa-brands fa-github"></i></a>
         </div>
